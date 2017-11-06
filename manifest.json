@@ -1,0 +1,22 @@
+{
+	  "name": "Auto-Click",
+ "description": "Auto-Click",
+ "version": "1.0",
+
+  "permissions": [
+   "tabs", "http://*/*", "https://*/*"
+  ],
+  	  "browser_action": {
+      "default_title": "Auto-Click.",
+      "default_icon": "icon.png",
+      "default_popup": "views/popup.html"
+  },
+	"content_scripts": [
+    {
+      "matches": ["https://tinder.com/*"],
+
+      "js": ["js/main.js"]
+    }
+  ],
+	  "manifest_version": 2
+	}
